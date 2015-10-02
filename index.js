@@ -33,7 +33,8 @@ var CodeMirrorEditor = React.createClass({
     defaultValue: React.PropTypes.string,
     style: React.PropTypes.object,
     className: React.PropTypes.string,
-    onChange: React.PropTypes.func
+    onChange: React.PropTypes.func,
+    configurationHook: React.PropTypes.func
   },
 
   componentDidMount: function() {
@@ -41,6 +42,9 @@ var CodeMirrorEditor = React.createClass({
     if (!isTextArea) {
       this.editor = CodeMirror.fromTextArea(this.refs.editor.getDOMNode(), this.props);
       this.editor.on('change', this.handleChange);
+      if (this.props.configurationHook) {
+        this.props.configurationHook(this.editor);
+      }
     }
   },
 
