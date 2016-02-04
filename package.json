@@ -1,6 +1,6 @@
 {
   "name": "react-code-mirror",
-  "version": "3.0.4",
+  "version": "3.0.6",
   "description": "CodeMirror component for Facebook React",
   "keywords": [
     "react",
@@ -8,13 +8,14 @@
   ],
   "peerDependencies": {
     "codemirror": ">=4.6.0 <6.0.0",
-    "react": ">=0.12.0 <0.14.0"
+    "react": ">=0.12.0 <0.15.0"
   },
   "devDependencies": {
     "browserify-middleware": "^3.0.1",
     "codemirror": "^5.1.0",
     "express": "^4.9.5",
-    "react": "^0.13.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
     "umd": "^2.1.0"
   },
   "scripts": {
