@@ -69,7 +69,7 @@ var CodeMirrorEditor = React.createClass({
           if (this.state.isControlled) {
             this.editor.setValue(this.props.value);
           } else {
-            this.props.value = value;
+            //this.props.value = value;
           }
         }
       }
